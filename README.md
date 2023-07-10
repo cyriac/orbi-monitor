@@ -4,7 +4,7 @@ Monitor devices on your netgear orbi network
 
 ## Install
 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 
 `mv config.toml.sample config.toml`
 
