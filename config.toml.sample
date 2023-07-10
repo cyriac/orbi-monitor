@@ -1,0 +1,3 @@
+orbi_url = 'http://10.0.0.1/DEV_device_info.htm'
+username = 'admin'
+password = '<<password>>'
