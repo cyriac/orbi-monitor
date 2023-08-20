@@ -16,7 +16,13 @@ orbi_url = '{}?ts={}'.format(
     calendar.timegm(time.gmtime())
 )
 
-resp = http_session.get(orbi_url, verify=False)
+
+for i in range(10):
+    try:
+        resp = http_session.get(orbi_url, verify=False)
+    except:
+        continue
+    break
 
 devices = None
 for line in resp.text.split('\n'):
